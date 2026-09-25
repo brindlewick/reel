@@ -1,0 +1,16 @@
+# Check the wiki on every pull request and every push to main, so that a page missing from the
+# index, a stale status or a broken link is caught before merge rather than remembered.
+name: Check the wiki
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -m unittest discover -s scripts
+      - run: python3 scripts/wiki_lint.py
