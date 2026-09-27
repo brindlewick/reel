@@ -1,18 +1,20 @@
 ---
 title: Game lifecycle
 type: decision
-status: open
-updated: 2026-09-25
+status: decided
+decided: 2026-09-27
+updated: 2026-09-27
 ---
 
 # Game lifecycle
 
 **Question.** How is a game loaded, run, paused and unloaded as it scrolls in and out of view?
 
-**Status: open.** This page holds a proposal. It depends on [starting a game](game-start.md),
-[coming back to a game](game-return.md) and [swipe and game input](swipe-gesture.md).
+**Status: decided on 2026-09-27.** It follows from [starting a game](game-start.md),
+[coming back to a game](game-return.md), [swipe and game input](swipe-gesture.md) and
+[the app shell](app-shell.md).
 
-## Proposal
+## Decision
 
 **A live window of three games**: the one on screen, the one before it and the one after it.
 Anything further away is removed, and loaded again if the player comes back to it.
@@ -25,8 +27,8 @@ feed sends it `pause` and mutes it.
 
 | state | what it means |
 |---|---|
-| unloaded | outside the live window. Nothing is on the page. |
-| loading | inside the window, and its frame is loading |
+| unloaded | outside the live window. Nothing is loaded. |
+| loading | inside the window, and its web view or frame is loading |
 | ready | loaded, and it has sent `ready` if it follows the contract |
 | active | on screen, with touch input and sound |
 | paused | inside the window but off screen, and still loaded |
@@ -35,8 +37,13 @@ feed sends it `pause` and mutes it.
 A game that does not follow the [contract](game-format.md) cannot be paused. It is unloaded when
 it leaves the screen, so it starts fresh when the player comes back to it.
 
-**Three is a guess.** Whether a mid-range phone keeps three frames running without stutter is
-unverified, and [the first version](first-version.md) measures it.
+**Three is a guess.** Whether a mid-range phone keeps three games running without stutter, in the
+app or in a browser, is unverified, and [the first version](first-version.md) measures it.
+
+## What would reopen it
+
+The first version's measurements. If three live games stutter on a mid-range phone, the window
+shrinks. If there is room to spare, it may grow.
 
 ## What depends on it
 

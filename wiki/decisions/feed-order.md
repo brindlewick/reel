@@ -1,15 +1,17 @@
 ---
 title: Feed order
 type: decision
-status: open
-updated: 2026-09-25
+status: decided
+decided: 2026-09-27
+updated: 2026-09-27
 ---
 
 # Feed order
 
 **Question.** What decides which game comes next?
 
-**Status: open.**
+**Status: decided on 2026-09-27 for the first version.** Whether recommendations are part of the
+core idea is still open.
 
 ## Options
 
@@ -22,14 +24,20 @@ costs: it does not learn, and a returning player sees the same sequence.
 feed ranks what comes next. The costs: a way to recognise a returning player, collecting what
 they do, a position on privacy, a ranking system, and enough games for ranking to matter.
 
-## Recommendation
+## Decision
 
 A fixed order for the first version, since a trial is easier to compare when every run sees the
 same games in the same order. Then a shuffle once there are enough games.
 
-Whether recommendations are part of the core idea is worth deciding now. If they are, the first
-version could keep the signals a ranking would use, such as the time spent on each game and
-quick skips, on the phone only.
+## Still open
+
+Whether recommendations are part of the core idea. If they are, the first version could keep
+the signals a ranking would use, such as the time spent on each game and quick skips, on the
+phone only.
+
+## What would reopen it
+
+Enough games that a fixed order goes stale, which is when the shuffle comes in.
 
 ## What depends on it
 

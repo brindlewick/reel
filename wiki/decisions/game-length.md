@@ -1,15 +1,16 @@
 ---
 title: Game length
 type: decision
-status: open
-updated: 2026-09-25
+status: decided
+decided: 2026-09-27
+updated: 2026-09-27
 ---
 
 # Game length
 
 **Question.** Are the games in the feed short loops made for it, or can any game appear?
 
-**Status: open.**
+**Status: decided on 2026-09-27.**
 
 ## Options
 
@@ -23,10 +24,15 @@ accidental swipe loses more progress, and a larger download slows the swipe.
 **Short by default, with a way to keep playing.** A game that holds the player's attention can
 open outside the feed, full screen. The cost: a second mode to design.
 
-## Recommendation
+## Decision
 
-Short loops for the first version. Whether a game can open outside the feed can wait until the
-feed itself works.
+Short loops for the first version, with a round under a minute. Whether a game can open outside
+the feed can wait until the feed itself works.
+
+## What would reopen it
+
+A game that players keep wanting to play past a round, which brings back the option of opening a
+game outside the feed.
 
 ## What depends on it
 
