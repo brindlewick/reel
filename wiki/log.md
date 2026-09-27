@@ -8,6 +8,16 @@ updated: 2026-09-27
 
 Append-only. Newest first. One entry per operation, headed `## [YYYY-MM-DD] <operation> | <title>`.
 
+## [2026-09-27] decide | the open recommendations accepted
+
+The user accepted every open recommendation at once: the app shell, the web version, where games
+come from for the first version, swipe and game input, starting a game, coming back to a game,
+game length, feed order for the first version, and the game format, game lifecycle and first
+version as proposed. Each page now records its decision and what would reopen it. Three
+questions had no recommendation and stay open: the long-run aim for where games come from,
+whether recommendations are part of the core idea, and which phones the first version's trials
+run on.
+
 ## [2026-09-27] decide | platform widened to Android, iOS and the web
 
 The platform decision is widened: reel is on Android, iOS and the web from the start. On phones

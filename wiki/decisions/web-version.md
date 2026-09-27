@@ -1,7 +1,8 @@
 ---
 title: The web version
 type: decision
-status: open
+status: decided
+decided: 2026-09-27
 updated: 2026-09-27
 ---
 
@@ -9,8 +10,8 @@ updated: 2026-09-27
 
 **Question.** What is reel on the web for, and how does it work without a touch screen?
 
-**Status: open.** It follows from the [platform](platform.md) decision, which puts reel on the
-web as well as on phones.
+**Status: decided on 2026-09-27.** It follows from the [platform](platform.md) decision, which
+puts reel on the web as well as on phones.
 
 ## Why it matters
 
@@ -33,11 +34,16 @@ design, and a player on a phone has to install the app to swipe.
 **Shared links only.** On any device, the web shows the one game a link points to, and invites
 the player to the app for the feed. The least work, but the web is not a feed.
 
-## Recommendation
+## Decision
 
 The full feed on every device for the first version. It has one behaviour to define and test,
 and it is also where games are built and tried out. Whether a phone browser should point to the
 app can wait until the apps are in the stores.
+
+## What would reopen it
+
+The apps reaching the stores, when the question of pointing phone browsers to the app comes
+back, or games that cannot be played well with a mouse.
 
 ## What depends on it
 

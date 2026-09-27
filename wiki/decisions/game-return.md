@@ -1,8 +1,9 @@
 ---
 title: Coming back to a game
 type: decision
-status: open
-updated: 2026-09-25
+status: decided
+decided: 2026-09-27
+updated: 2026-09-27
 ---
 
 # Coming back to a game
@@ -10,7 +11,7 @@ updated: 2026-09-25
 **Question.** When a player swipes back to a game they left, does it resume where they left it,
 or start fresh?
 
-**Status: open.**
+**Status: decided on 2026-09-27.**
 
 ## Options
 
@@ -25,9 +26,14 @@ The cost: an accidental swipe loses the player's progress.
 [game lifecycle](game-lifecycle.md) proposes anyway, and anything further back starts fresh. It
 covers the accidental swipe, the case that matters most, at no extra memory cost.
 
-## Recommendation
+## Decision
 
-Resume only the game just left.
+Resume only the game just left. Anything further back starts fresh.
+
+## What would reopen it
+
+Players losing progress they wanted to keep in games further back, or the live window turning
+out too costly on a mid-range phone.
 
 ## What depends on it
 

@@ -1,7 +1,8 @@
 ---
 title: The first version
 type: decision
-status: open
+status: decided
+decided: 2026-09-27
 updated: 2026-09-27
 ---
 
@@ -10,10 +11,10 @@ updated: 2026-09-27
 **Question.** What is the smallest build that shows whether swiping to a new game works, and how
 will we know?
 
-**Status: open.** This page holds a proposal. It follows from the other decisions, and changes if
-they do.
+**Status: decided on 2026-09-27.** It follows from the other decisions, and changes if they do.
+Which phones the trials run on is still open.
 
-## Proposal
+## Decision
 
 - reel on Android, iOS and the web, built as [the app shell](app-shell.md) decides, with no
   accounts and no data collection. The apps carry the games inside them, and the web version and
@@ -42,9 +43,13 @@ And across the platforms:
 Each of these becomes a trial, recorded in `raw/trials/` with its method, so the result can be
 checked and repeated.
 
-## Still to settle
+## Still open
 
 - Which phones the trials run on, and which of them counts as mid-range.
+
+## What would reopen it
+
+A change to any decision it depends on.
 
 ## Depends on
 

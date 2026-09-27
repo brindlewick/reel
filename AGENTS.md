@@ -10,9 +10,8 @@ game, the way a swipe moves to the next video in a short-video app.
 
 ## Where it stands
 
-Design. There is no code yet. The design is settled in the wiki one decision at a time, and code
-starts once the decisions [the first version](wiki/decisions/first-version.md) depends on are
-made.
+There is no code yet. The decisions [the first version](wiki/decisions/first-version.md) depends
+on are made, and the code starts from them. A few questions are still open in the wiki.
 
 ## Read the wiki index first
 

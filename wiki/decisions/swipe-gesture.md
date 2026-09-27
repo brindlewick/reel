@@ -1,7 +1,8 @@
 ---
 title: Swipe and game input
 type: decision
-status: open
+status: decided
+decided: 2026-09-27
 updated: 2026-09-27
 ---
 
@@ -10,7 +11,7 @@ updated: 2026-09-27
 **Question.** How does the feed tell a swipe to another game apart from the game's own touch
 input?
 
-**Status: open.**
+**Status: decided on 2026-09-27.**
 
 ## Why it matters
 
@@ -43,12 +44,16 @@ gestures (unverified: which edges, on which phones).
 and games that use them get the edge strip. The costs: two behaviours for players to learn, and
 it relies on each game declaring correctly.
 
-## Recommendation
+## Decision
 
 Swipe anywhere for the first version, with in-house games that leave vertical swipes alone. The
 first version then tests whether the apps and the web tell the swipe apart reliably, and falls
-back to the game reporting it through the contract where they do not. Revisit this before any game by another
-author arrives, since that is when the edge strip or a declaration would be needed.
+back to the game reporting it through the contract where they do not.
+
+## What would reopen it
+
+The first game by another author that uses vertical swipes, which would need the edge strip or a
+declaration. Revisit this before any such game arrives.
 
 ## What depends on it
 

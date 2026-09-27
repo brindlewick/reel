@@ -1,7 +1,8 @@
 ---
 title: Game format
 type: decision
-status: open
+status: decided
+decided: 2026-09-27
 updated: 2026-09-27
 ---
 
@@ -9,11 +10,10 @@ updated: 2026-09-27
 
 **Question.** What does a game have to be to load into the feed?
 
-**Status: open.** This page holds a proposal. It follows from the [platform](platform.md)
-decision, and depends on [where games come from](game-sources.md) and
-[the app shell](app-shell.md).
+**Status: decided on 2026-09-27.** It follows from the [platform](platform.md),
+[where games come from](game-sources.md) and [app shell](app-shell.md) decisions.
 
-## Proposal
+## Decision
 
 - **A static web bundle.** A folder with an `index.html` and its assets. It needs no server of
   its own.
@@ -39,11 +39,16 @@ apps are shells for web games.
 **One shared engine**, with each game as data and scripts for it. Games would be small and quick
 to switch between. The costs: every game is tied to one engine, and no existing game fits.
 
-## Recommendation
+## Why
 
-The static web bundle with the contract. The same bundle runs in the apps' web views and on the
-web, a game can be built and tested in an ordinary browser, each game is isolated from the feed
-and from the other games, and an existing web game fits with at most a small adapter.
+The same bundle runs in the apps' web views and on the web, a game can be built and tested in an
+ordinary browser, each game is isolated from the feed and from the other games, and an existing
+web game fits with at most a small adapter.
+
+## What would reopen it
+
+Games by other authors that cannot adopt the contract, or a first-load size limit that no game
+can meet.
 
 ## What depends on it
 

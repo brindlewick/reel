@@ -1,7 +1,8 @@
 ---
 title: The app shell
 type: decision
-status: open
+status: decided
+decided: 2026-09-27
 updated: 2026-09-27
 ---
 
@@ -11,8 +12,8 @@ updated: 2026-09-27
 whether the feed is native on phones or a web page everywhere, and which framework it is written
 in.
 
-**Status: open.** This page holds a proposal. It follows from the [platform](platform.md)
-decision, and from [the web version](web-version.md) once that is decided.
+**Status: decided on 2026-09-27.** It follows from the [platform](platform.md) and
+[web version](web-version.md) decisions.
 
 ## The feed: native on phones, or a web page everywhere
 
@@ -45,12 +46,19 @@ which makes frames for games harder (unverified).
 **Swift, Kotlin and a separate web feed.** Full control and the most native feel, in three
 codebases.
 
-## Recommendation
+## Decision
 
 Native on phones and web on the web, in React Native with Expo. The swipe on phones is native,
 which is the reason for the apps, and all three platforms share one TypeScript codebase. If
 Expo's web target cannot give a good swipe feed, the web version can be a small web page of its
 own that shares the games and the contract, without changing the apps.
+
+## What would reopen it
+
+The first version showing that a native pager and a game's web view cannot share touches
+reliably, or that Expo cannot build the iOS app without a Mac after all. A web target that
+cannot give a good swipe feed does not reopen it, since the decision already allows the web
+version to be a page of its own.
 
 ## What depends on it
 

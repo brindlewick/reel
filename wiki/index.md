@@ -20,28 +20,28 @@ both, and [the log](log.md) lists every change.
   phones, a native app that is a shell for web games.
 - [Which phones first](decisions/mobile-os.md): **decided**. Android and iOS, both from the
   start, and what that costs.
-- [The app shell](decisions/app-shell.md): **open**. How reel is built on all three platforms: a
-  native feed on phones or a web page everywhere, and which framework.
-- [The web version](decisions/web-version.md): **open**. What reel on the web is for, and how the
-  feed works with a mouse, a trackpad or a keyboard.
-- [Where games come from](decisions/game-sources.md): **open**. Games written in-house, curated
-  games by other authors, or uploads from creators, now and in the long run.
-- [Game format](decisions/game-format.md): **open**. What a game has to be to load into the
-  feed. Proposed: a static web bundle, isolated from the feed and from other games, with a
-  manifest entry and a small message contract.
-- [Swipe and game input](decisions/swipe-gesture.md): **open**. How a swipe to another game is
-  told apart from a game's own touch input.
-- [Starting a game](decisions/game-start.md): **open**. Whether a game plays as soon as it is on
-  screen or waits for the player, and when sound starts.
-- [Coming back to a game](decisions/game-return.md): **open**. Whether a game the player swipes
-  back to resumes where it was left or starts fresh.
-- [Game lifecycle](decisions/game-lifecycle.md): **open**. How games are loaded, run, paused and
-  unloaded as they scroll in and out of view.
-- [Game length](decisions/game-length.md): **open**. Short loops made for the feed, or any game.
-- [Feed order](decisions/feed-order.md): **open**. What decides which game comes next: a fixed
-  order, a shuffle or recommendations.
-- [The first version](decisions/first-version.md): **open**. The smallest build that shows
-  whether swiping to a new game works, and how to tell.
+- [The app shell](decisions/app-shell.md): **decided**. A native pager with a web view per game
+  on phones, and a web feed with a frame per game on the web, in React Native with Expo.
+- [The web version](decisions/web-version.md): **decided**. The full feed on every device. On a
+  computer, the wheel, a trackpad and the arrow keys move between games.
+- [Where games come from](decisions/game-sources.md): **decided**. Written in-house for the first
+  version. The long-run aim is still open.
+- [Game format](decisions/game-format.md): **decided**. A static web bundle, isolated from the
+  feed and from other games, with a manifest entry and a small message contract.
+- [Swipe and game input](decisions/swipe-gesture.md): **decided**. A swipe anywhere moves the
+  feed, and the first games leave vertical swipes alone.
+- [Starting a game](decisions/game-start.md): **decided**. A game waits on its own start screen
+  and starts on the first touch. Sound starts with play.
+- [Coming back to a game](decisions/game-return.md): **decided**. Only the game just left
+  resumes. Anything further back starts fresh.
+- [Game lifecycle](decisions/game-lifecycle.md): **decided**. A live window of three games, one
+  active game, and the states a game passes through.
+- [Game length](decisions/game-length.md): **decided**. Short loops, with a round under a minute.
+- [Feed order](decisions/feed-order.md): **decided**. A fixed order for the first version, then a
+  shuffle. Whether recommendations are part of the core idea is still open.
+- [The first version](decisions/first-version.md): **decided**. Four small games in a feed on
+  Android, iOS and the web, and five measures of whether swiping to a new game works. Which
+  phones the trials run on is still open.
 
 ## Concepts
 

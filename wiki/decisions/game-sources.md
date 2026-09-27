@@ -1,8 +1,9 @@
 ---
 title: Where games come from
 type: decision
-status: open
-updated: 2026-09-25
+status: decided
+decided: 2026-09-27
+updated: 2026-09-27
 ---
 
 # Where games come from
@@ -10,7 +11,7 @@ updated: 2026-09-25
 **Question.** Where do the games in the feed come from? Two answers are needed: one for the
 first version, and the long-run aim, since the aim shapes the design earlier than it seems.
 
-**Status: open.**
+**Status: decided on 2026-09-27 for the first version.** The long-run aim is still open.
 
 ## Options
 
@@ -26,13 +27,21 @@ to adopt the contract, or the feed would have to treat their games as ones it ca
 goes live, moderation, and handling abuse, since a game is code running on a player's phone,
 even inside a sandbox. This makes reel a platform as well as a feed.
 
-## Recommendation
+## Decision
 
 In-house for the first version. It removes every question except the one being tested.
 
-For the long run, decide the aim now even though it is not built yet. Uploads need games served
-from an isolated origin, and review and moderation from the start. Curated games need licensing,
-and a way to handle games that ignore the contract.
+## Still open
+
+The long-run aim: games written in-house only, curated games by other authors, or uploads from
+creators. It is worth deciding before the design hardens. Uploads need games served from an
+isolated origin, and review and moderation from the start. Curated games need licensing, and a
+way to handle games that ignore the contract.
+
+## What would reopen it
+
+Nothing in the first version. The long-run aim, once decided, may add other sources beside
+in-house games.
 
 ## What depends on it
 
