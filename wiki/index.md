@@ -16,11 +16,14 @@ both, and [the log](log.md) lists every change.
 
 ## Decisions
 
-- [Platform](decisions/platform.md): **decided**. A native app from the start, as a shell that
-  runs web games.
-- [Which phones first](decisions/mobile-os.md): **open**. iOS, Android or both.
-- [The app shell](decisions/app-shell.md): **open**. How the app is built around the games: a
-  native feed or a web page inside the app, and which framework.
+- [Platform](decisions/platform.md): **decided**. Android, iOS and the web from the start. On
+  phones, a native app that is a shell for web games.
+- [Which phones first](decisions/mobile-os.md): **decided**. Android and iOS, both from the
+  start, and what that costs.
+- [The app shell](decisions/app-shell.md): **open**. How reel is built on all three platforms: a
+  native feed on phones or a web page everywhere, and which framework.
+- [The web version](decisions/web-version.md): **open**. What reel on the web is for, and how the
+  feed works with a mouse, a trackpad or a keyboard.
 - [Where games come from](decisions/game-sources.md): **open**. Games written in-house, curated
   games by other authors, or uploads from creators, now and in the long run.
 - [Game format](decisions/game-format.md): **open**. What a game has to be to load into the
@@ -42,8 +45,8 @@ both, and [the log](log.md) lists every change.
 
 ## Concepts
 
-How phones, web views and app stores really behave, as distinct from what their documentation
-says. None yet. Claims the decisions rest on are marked unverified until a trial backs them.
+How phones, browsers, web views and app stores really behave, as distinct from what their
+documentation says. None yet. Claims the decisions rest on are marked unverified until a trial backs them.
 
 ## Sources
 

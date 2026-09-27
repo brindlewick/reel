@@ -18,11 +18,14 @@ Many games use vertical swipes. If the feed takes every vertical swipe, those ga
 played. If the game takes every touch, the player cannot leave it. This shapes how reel feels
 more than any other choice in the first version.
 
-There is a technical side as well. In the app, the feed and the game's web view receive the same
-touches, and the app has to decide which one a swipe belongs to. How it decides depends on
-[the app shell](app-shell.md). How reliably it can decide while a game handles touches of its
-own is unverified. If it cannot, the game reports the swipe to the feed through the
-[contract](game-format.md).
+There is a technical side as well. In the apps, the feed and the game's web view receive the
+same touches, and the app has to decide which one a swipe belongs to. How it decides depends on
+[the app shell](app-shell.md). On the web, a touch on a game lands inside the game's frame,
+where the feed's page does not see it, and a phone browser has gestures of its own. How reliably
+either can tell a swipe apart while a game handles touches of its own is unverified. Where it
+cannot, the game reports the swipe to the feed through the [contract](game-format.md). Without a
+touch screen, the swipe becomes the scroll wheel, a trackpad or the arrow keys, as
+[the web version](web-version.md) decides.
 
 ## Options
 
@@ -43,8 +46,8 @@ it relies on each game declaring correctly.
 ## Recommendation
 
 Swipe anywhere for the first version, with in-house games that leave vertical swipes alone. The
-first version then tests whether the app tells the swipe apart reliably, and falls back to the
-game reporting it through the contract if it does not. Revisit this before any game by another
+first version then tests whether the apps and the web tell the swipe apart reliably, and falls
+back to the game reporting it through the contract where they do not. Revisit this before any game by another
 author arrives, since that is when the edge strip or a declaration would be needed.
 
 ## What depends on it

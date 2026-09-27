@@ -26,14 +26,15 @@ costs: an extra tap for every game, which adds up over a feed and feels closer t
 
 ## Sound
 
-A phone browser plays no sound until the player has touched the page. An app can let its web
-views play sound without a touch (unverified: from memory, not yet tried). So in the app, when
-sound starts is a choice, not a limit.
+On the web, a browser plays no sound until the player has touched or clicked the page. The apps
+can let their web views play sound without a touch (unverified: from memory, not yet tried). So
+in the apps, when sound starts is a choice, not a limit.
 
 ## Recommendation
 
 The game waits on its own start screen and starts on the first touch. Sound starts when play
-starts, so the feed never makes a sound the player did not ask for.
+starts, so the feed never makes a sound the player did not ask for, and the rule is the same on
+all three platforms.
 
 ## What depends on it
 

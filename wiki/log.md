@@ -8,6 +8,15 @@ updated: 2026-09-27
 
 Append-only. Newest first. One entry per operation, headed `## [YYYY-MM-DD] <operation> | <title>`.
 
+## [2026-09-27] decide | platform widened to Android, iOS and the web
+
+The platform decision is widened: reel is on Android, iOS and the web from the start. On phones
+it stays a native app that is a shell for web games. The same answer settles which phones first:
+Android and iOS, both from the start. One new open question follows: what the web version is
+for, and how it works without a touch screen. The app shell's recommendation now covers all
+three platforms: native on phones and web on the web, in one TypeScript codebase. The open pages
+now cover the web as well as the apps.
+
 ## [2026-09-27] decide | platform: a native app that runs web games
 
 reel is a native app from the start, and the app is a shell for games written as web code. The

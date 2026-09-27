@@ -27,7 +27,7 @@ feed sends it `pause` and mutes it.
 | state | what it means |
 |---|---|
 | unloaded | outside the live window. Nothing is loaded. |
-| loading | inside the window, and its web view is loading |
+| loading | inside the window, and its web view or frame is loading |
 | ready | loaded, and it has sent `ready` if it follows the contract |
 | active | on screen, with touch input and sound |
 | paused | inside the window but off screen, and still loaded |
@@ -36,8 +36,8 @@ feed sends it `pause` and mutes it.
 A game that does not follow the [contract](game-format.md) cannot be paused. It is unloaded when
 it leaves the screen, so it starts fresh when the player comes back to it.
 
-**Three is a guess.** Whether a mid-range phone keeps three web views running without stutter is
-unverified, and [the first version](first-version.md) measures it.
+**Three is a guess.** Whether a mid-range phone keeps three games running without stutter, in the
+app or in a browser, is unverified, and [the first version](first-version.md) measures it.
 
 ## What depends on it
 

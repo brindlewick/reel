@@ -1,7 +1,8 @@
 ---
 title: Which phones first
 type: decision
-status: open
+status: decided
+decided: 2026-09-27
 updated: 2026-09-27
 ---
 
@@ -9,26 +10,33 @@ updated: 2026-09-27
 
 **Question.** Does the app start on iOS, on Android, or on both?
 
-**Status: open.** It follows from the [platform](platform.md) decision.
+**Status: decided on 2026-09-27.**
 
-## Options
+## Decision
 
-**iOS first.** The costs: an iOS app is built on a Mac or by a macOS build service, and putting
-test builds on other people's phones needs a paid Apple developer account.
+Both. reel is on Android and iOS from the start, alongside the web, as the
+[platform](platform.md) decision says.
 
-**Android first.** An Android app builds on any operating system, and a test build installs
-straight from a file, with no store and no account. The cost: many phones and screen sizes to
-check.
+## What it costs
 
-**Both from the start.** With a cross-platform framework, most of the app is written once (see
-[the app shell](app-shell.md)). The cost: testing and store work on two platforms before the idea
-is known to work.
+- An iOS app is built on a Mac or by a macOS build service.
+- Putting test builds on other people's iPhones needs a paid Apple developer account.
+- An Android test build installs straight from a file, with no store and no account, but there
+  are many phones and screen sizes to check.
+- Testing and store work happen on two platforms before the idea is known to work.
 
-## Recommendation
+A cross-platform framework keeps most of the app in one codebase. See
+[the app shell](app-shell.md).
 
-Whichever phones are at hand for testing, since [the first version](first-version.md) is judged
-on a real phone. With a cross-platform framework, the other platform can follow at a low cost
-once the first works.
+## Options that were considered
+
+**iOS first** and **Android first**, each putting off the other platform's costs until the idea
+works. Not chosen: reel is multi-platform from the start.
+
+## What would reopen it
+
+A cost on one platform that holds the first version back, such as an iOS build that cannot be set
+up.
 
 ## What depends on it
 
