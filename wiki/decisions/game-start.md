@@ -2,7 +2,7 @@
 title: Starting a game
 type: decision
 status: open
-updated: 2026-09-25
+updated: 2026-09-27
 ---
 
 # Starting a game
@@ -26,14 +26,14 @@ costs: an extra tap for every game, which adds up over a feed and feels closer t
 
 ## Sound
 
-Browsers block sound until the player has touched the page (unverified: the exact rules differ
-by browser and have not been captured). Whatever the choice above, the feed can start muted and
-turn sound on for every game after the first touch.
+A phone browser plays no sound until the player has touched the page. An app can let its web
+views play sound without a touch (unverified: from memory, not yet tried). So in the app, when
+sound starts is a choice, not a limit.
 
 ## Recommendation
 
-The game waits on its own start screen and starts on the first touch. The first touch in a
-session also turns sound on.
+The game waits on its own start screen and starts on the first touch. Sound starts when play
+starts, so the feed never makes a sound the player did not ask for.
 
 ## What depends on it
 

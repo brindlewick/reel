@@ -1,7 +1,7 @@
 ---
 title: reel wiki
 type: schema
-updated: 2026-09-25
+updated: 2026-09-27
 ---
 
 # reel wiki
@@ -16,13 +16,16 @@ both, and [the log](log.md) lists every change.
 
 ## Decisions
 
-- [Platform](decisions/platform.md): **open**. Web in phone browsers first, native apps first,
-  or both.
+- [Platform](decisions/platform.md): **decided**. A native app from the start, as a shell that
+  runs web games.
+- [Which phones first](decisions/mobile-os.md): **open**. iOS, Android or both.
+- [The app shell](decisions/app-shell.md): **open**. How the app is built around the games: a
+  native feed or a web page inside the app, and which framework.
 - [Where games come from](decisions/game-sources.md): **open**. Games written in-house, curated
   games by other authors, or uploads from creators, now and in the long run.
 - [Game format](decisions/game-format.md): **open**. What a game has to be to load into the
-  feed. Proposed: a static web bundle in a sandboxed frame, with a manifest entry and a small
-  message contract.
+  feed. Proposed: a static web bundle, isolated from the feed and from other games, with a
+  manifest entry and a small message contract.
 - [Swipe and game input](decisions/swipe-gesture.md): **open**. How a swipe to another game is
   told apart from a game's own touch input.
 - [Starting a game](decisions/game-start.md): **open**. Whether a game plays as soon as it is on
@@ -39,7 +42,7 @@ both, and [the log](log.md) lists every change.
 
 ## Concepts
 
-How browsers, phones and app stores really behave, as distinct from what their documentation
+How phones, web views and app stores really behave, as distinct from what their documentation
 says. None yet. Claims the decisions rest on are marked unverified until a trial backs them.
 
 ## Sources

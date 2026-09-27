@@ -2,7 +2,7 @@
 title: Game lifecycle
 type: decision
 status: open
-updated: 2026-09-25
+updated: 2026-09-27
 ---
 
 # Game lifecycle
@@ -10,7 +10,8 @@ updated: 2026-09-25
 **Question.** How is a game loaded, run, paused and unloaded as it scrolls in and out of view?
 
 **Status: open.** This page holds a proposal. It depends on [starting a game](game-start.md),
-[coming back to a game](game-return.md) and [swipe and game input](swipe-gesture.md).
+[coming back to a game](game-return.md), [swipe and game input](swipe-gesture.md) and
+[the app shell](app-shell.md).
 
 ## Proposal
 
@@ -25,8 +26,8 @@ feed sends it `pause` and mutes it.
 
 | state | what it means |
 |---|---|
-| unloaded | outside the live window. Nothing is on the page. |
-| loading | inside the window, and its frame is loading |
+| unloaded | outside the live window. Nothing is loaded. |
+| loading | inside the window, and its web view is loading |
 | ready | loaded, and it has sent `ready` if it follows the contract |
 | active | on screen, with touch input and sound |
 | paused | inside the window but off screen, and still loaded |
@@ -35,7 +36,7 @@ feed sends it `pause` and mutes it.
 A game that does not follow the [contract](game-format.md) cannot be paused. It is unloaded when
 it leaves the screen, so it starts fresh when the player comes back to it.
 
-**Three is a guess.** Whether a mid-range phone keeps three frames running without stutter is
+**Three is a guess.** Whether a mid-range phone keeps three web views running without stutter is
 unverified, and [the first version](first-version.md) measures it.
 
 ## What depends on it

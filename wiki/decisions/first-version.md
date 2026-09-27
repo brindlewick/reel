@@ -2,7 +2,7 @@
 title: The first version
 type: decision
 status: open
-updated: 2026-09-25
+updated: 2026-09-27
 ---
 
 # The first version
@@ -15,14 +15,16 @@ they do.
 
 ## Proposal
 
-- A single web page, with no server of its own, no accounts and no data collection.
+- An app on [the first phones](mobile-os.md), built as [the app shell](app-shell.md) decides,
+  with no accounts and no data collection. The games ship inside the app, so there is no
+  server.
 - A vertical feed that shows one game at a time and snaps to each.
 - Four or five small games written for it, following the [game format](game-format.md). For
   example: a one-button flying game, a reaction timer, a block-stacking game and a
   tap-the-target game. None uses vertical swipes.
 - A manifest in one file that lists them, in a [fixed order](feed-order.md).
 - The live window and pausing from the [game lifecycle](game-lifecycle.md).
-- TypeScript. The build tool is chosen when the code starts.
+- The games in TypeScript. The app's language follows from [the app shell](app-shell.md).
 
 ## How we will know it works
 
@@ -38,11 +40,12 @@ checked and repeated.
 
 ## Still to settle
 
-- Which phones and browsers the trials run on, and which of them counts as mid-range.
+- Which phones the trials run on, and which of them counts as mid-range.
 
 ## Depends on
 
-[Platform](platform.md), [where games come from](game-sources.md),
+[Platform](platform.md), [which phones first](mobile-os.md), [the app shell](app-shell.md),
+[where games come from](game-sources.md),
 [game format](game-format.md), [swipe and game input](swipe-gesture.md),
 [starting a game](game-start.md), [coming back to a game](game-return.md),
 [game lifecycle](game-lifecycle.md) and [game length](game-length.md).
